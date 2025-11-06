@@ -1,0 +1,14 @@
+交叉编译环境搭建:
+    使用 make modules_prepare 准备了内核源码树
+
+第一个核心问题：Invalid module format
+    问题: 编译模块的内核配置与目标板运行的内核配置不匹配（缺少 preempt 和 modversions）。
+    解决方案: 从目标板上通过 /proc/config.gz 获取正在运行的内核的真实配置，并用它来更新主机上的内核源码树，确保了编译环境与运行环境的“指纹”一致。
+
+第二个核心问题：no symbol version for module_layout
+    问题: 模块缺少符号版本信息，因为 make modules_prepare 不会生成完整的 Module.symvers 文件。
+    解决方案: 在内核源码目录中执行了 make modules。这是一个关键操作，它会完整编译所有内核模块，并生成一份包含所有内核符号版本信息的 Module.symvers 文件。这是解决符号版本问题的终极方法。
+
+第三个核心问题：交叉编译器不匹配
+    问题: 在执行 make modules 时，出现了大量汇编错误（如 architectural extension 'mp' is not allowed），表明您当前的交叉编译器版本过低或不适用，无法生成目标板 CPU（ARMv7）所需的指令。
+    解决方案: 您更换了一个更现代、更合适的 Linaro 交叉编译工具链，并通过修改 .bashrc 将其路径放在 PATH 环境变量的 最前面，确保系统优先使用正确的编译器。

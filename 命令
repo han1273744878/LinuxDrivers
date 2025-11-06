@@ -1,0 +1,17 @@
+insmode 载入Linux内核模块
+modprobe 加载Linux内核模块，同时这个模块所依赖的模块也同时被加载
+rmmode 写在Linux内核模块
+lsmod 列出当前已加载的Linux内核模块
+modinfo 显示Linux内核模块的信息
+
+module_param(name,type,perm)
+    name: 传递给驱动代码中的变量的名字
+    type: 参数类型
+    perm: 参数的读写权限
+module_param_array(name,type,nump,perm)
+    nump:数组长度
+module_param_string(name,string,len,perm)
+    string: 变量的名字，要和参数name的名字保持一致
+MODULE_PARM_DESC(_parm,desc)
+    _parm: 要描述的参数的参数名称
+    desc: 描述信息

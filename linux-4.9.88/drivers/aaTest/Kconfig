@@ -1,0 +1,9 @@
+menu "aaTest Drivers"
+
+config AATEST_HELLO
+	tristate "Simple Hello World driver"
+	default m
+	help
+	  This is a simple Hello World driver for testing.
+
+endmenu
