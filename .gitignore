@@ -36,3 +36,4 @@ vmlinux.o
 System.map
 .config.old
 
+.vscode/browse.vc.db*
