@@ -1,0 +1,38 @@
+# VS Code
+.vscode/browse.vc.db
+.vscode/browse.vc.db-*
+.vscode/.*.d
+.vscode/ipch/
+
+# Kernel build files
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.symvers
+*.order
+*.d
+.tmp_versions/
+Module.markers
+
+# Compiled files
+*.a
+*.so
+*.cmd
+
+# Logs
+*.log
+
+# Temporary files
+*~
+*.swp
+*.swo
+.*.swp
+
+# Linux kernel
+vmlinux
+vmlinux.o
+System.map
+.config.old
+
