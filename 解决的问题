@@ -3,7 +3,8 @@
 
 第一个核心问题：Invalid module format
     问题: 编译模块的内核配置与目标板运行的内核配置不匹配（缺少 preempt 和 modversions）。
-    解决方案: 从目标板上通过 /proc/config.gz 获取正在运行的内核的真实配置，并用它来更新主机上的内核源码树，确保了编译环境与运行环境的“指纹”一致。
+    解决方案1: 从目标板上通过 /proc/config.gz 获取正在运行的内核的真实配置，并用它来更新主机上的内核源码树，确保了编译环境与运行环境的“指纹”一致。
+    解决方案2: 使用 insmod -f 强制加载模块，跳过符号版本检查。
 
 第二个核心问题：no symbol version for module_layout
     问题: 模块缺少符号版本信息，因为 make modules_prepare 不会生成完整的 Module.symvers 文件。

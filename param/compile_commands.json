@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "/home/han/desktop/code/Linux驱动/param",
+    "command": "/usr/bin/gcc -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/11/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/x86/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/x86/include/generated -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/x86/include/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/x86/include/generated/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include/generated/uapi -include /home/han/desktop/code/Linux驱动/linux-4.9.88/include/linux/kconfig.h -D__KERNEL__ -DMODULE -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -c -o param.o param.c",
+    "file": "/home/han/desktop/code/Linux驱动/param/param.c"
+  }
+]

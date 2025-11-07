@@ -15,3 +15,23 @@ module_param_string(name,string,len,perm)
 MODULE_PARM_DESC(_parm,desc)
     _parm: 要描述的参数的参数名称
     desc: 描述信息
+
+EXPORT_SYMBOL(符号名)
+EXPORT_SYMBOL_GPL(符号名)只适用于包含GPL许可的模块3
+
+request_irq(unsigned int irq, irq_handler_t handler, unsigned long flags, const char *name, void *dev)
+    irq: 中断号
+    handler: 中断处理函数
+    flags: 中断处理标志
+    name: 中断名称
+    dev: 设备结构体
+free_irq(unsigned int irq, void *dev)
+    irq: 中断号
+    dev: 设备结构体
+disable_irq(unsigned long flags)  同步
+    flags: 中断处理标志
+disable_irq_nosync(unsigned long flags)  异步
+    flags: 中断处理标志
+enable_irq(unsigned long flags)
+    flags: 中断处理标志
+
