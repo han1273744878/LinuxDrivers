@@ -4,19 +4,28 @@
       "name": "linux-gcc-x64",
       "compileCommands": "${workspaceFolder}/param/compile_commands.json",
       "includePath": [
-        "${workspaceFolder}/**"
+        "${workspaceFolder}/**",
+        "/home/han/desktop/code/Linux驱动/linux-4.9.88/include",
+        "/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include",
+        "/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/generated",
+        "/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/generated/uapi",
+        "/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/uapi",
+        "/home/han/desktop/code/Linux驱动/linux-4.9.88/include/uapi",
+        "/home/han/desktop/code/Linux驱动/linux-4.9.88/include/generated",
+        "/home/han/desktop/code/Linux驱动/linux-4.9.88/include/generated/uapi"
       ],
       "defines": [
         "__KERNEL__",
         "MODULE",
         "__GNUC__",
-        "CONFIG_X86_64",
-        "CONFIG_64BIT"
+        "__LINUX_ARM_ARCH__=7",
+        "CONFIG_ARM",
+        "CONFIG_ARM_L1_CACHE_SHIFT=6"
       ],
       "compilerPath": "/usr/bin/gcc",
       "cStandard": "${default}",
       "cppStandard": "${default}",
-      "intelliSenseMode": "linux-gcc-x64",
+      "intelliSenseMode": "linux-gcc-arm",
       "compilerArgs": [],
       "forcedInclude": [
         "/home/han/desktop/code/Linux驱动/linux-4.9.88/include/linux/kconfig.h"
@@ -25,7 +34,7 @@
         "path": [
           "${workspaceFolder}",
           "/home/han/desktop/code/Linux驱动/linux-4.9.88/include",
-          "/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/x86/include"
+          "/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include"
         ],
         "limitSymbolsToIncludedHeaders": true,
         "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db"

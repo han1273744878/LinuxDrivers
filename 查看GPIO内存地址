@@ -1,0 +1,2 @@
+ ls -la /sys/class/gpio/
+ cat /sys/kernel/debug/gpio | head -20

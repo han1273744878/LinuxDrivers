@@ -445,7 +445,7 @@ enum
 	HRTIMER_SOFTIRQ, /* Unused, but kept as tools rely on the
 			    numbering. Sigh! */
 	RCU_SOFTIRQ,    /* Preferable RCU should always be the last softirq */
-
+	TEST_SOFTIRQ,
 	NR_SOFTIRQS
 };
 

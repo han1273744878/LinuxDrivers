@@ -1,0 +1,2 @@
+cat /sys/kernel/debug/gpio 2>&1 | head -50
+

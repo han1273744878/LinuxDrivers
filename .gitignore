@@ -37,3 +37,4 @@ System.map
 .config.old
 
 .vscode/browse.vc.db*
+.cache

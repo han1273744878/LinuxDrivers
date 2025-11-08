@@ -1,1 +1,0 @@
-cmd_/home/han/desktop/code/Linux驱动/param/param.ko := /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/han/desktop/code/Linux驱动/param/param.ko /home/han/desktop/code/Linux驱动/param/param.o /home/han/desktop/code/Linux驱动/param/param.mod.o ;  true

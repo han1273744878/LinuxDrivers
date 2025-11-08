@@ -4,10 +4,16 @@
 #include <linux/interrupt.h>
 
 int irq;
+struct tasklet_struct mytasklet;
 
+void mytasklet_func(unsigned long data)
+{
+    printk("data is %ld\n",data);
+}
 irqreturn_t test_interrupt(int irq, void* args)
 {
     printk("This is test_interrupt\n");
+    tasklet_schedule(&mytasklet);
     return IRQ_RETVAL(IRQ_HANDLED);
 }
 
@@ -15,7 +21,9 @@ static int interrupt_irq_init(void)
 {
     int ret;
 
-    irq = gpio_to_irq();//目前gpio的编号没有算出
+    tasklet_init(&mytasklet,mytasklet_func,1);
+    
+    irq = gpio_to_irq(10);//目前gpio的编号没有算出
     printk("irq is %d\n",irq);
     
     ret = request_irq(irq,test_interrupt,IRQF_TRIGGER_RISING,"test",NULL);
@@ -24,13 +32,14 @@ static int interrupt_irq_init(void)
         printk("request_irq failed\n");
         return -1;
     }
-    printk("request_irq success\n");
+    
     return 0;
 }
 
 static void interrupt_irq_exit(void)
 {
     free_irq(irq,NULL);
+    tasklet_kill(&mytasklet);
     printk("bye\n");;
 }
 

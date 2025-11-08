@@ -1,0 +1,29 @@
+[
+  {
+    "directory": "/home/han/desktop/code/Linux驱动/interrupt",
+    "command": "/opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -nostdinc -isystem /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/7.5.0/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/generated -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/generated/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include/generated/uapi -include /home/han/desktop/code/Linux驱动/linux-4.9.88/include/linux/kconfig.h -D__KERNEL__ -DMODULE -D__LINUX_ARM_ARCH__=7 -march=armv7-a -Wall -c -o interrupt.o interrupt.c",
+    "file": "/home/han/desktop/code/Linux驱动/interrupt/interrupt.c"
+  },
+  {
+    "directory": "/home/han/desktop/code/Linux驱动/interrupt",
+    "command": "/opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -nostdinc -isystem /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/7.5.0/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/generated -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/generated/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include/generated/uapi -include /home/han/desktop/code/Linux驱动/linux-4.9.88/include/linux/kconfig.h -D__KERNEL__ -DMODULE -D__LINUX_ARM_ARCH__=7 -march=armv7-a -Wall -c -o 自定义工作队列.o 自定义工作队列.c",
+    "file": "/home/han/desktop/code/Linux驱动/interrupt/自定义工作队列.c"
+  },
+  {
+    "directory": "/home/han/desktop/code/Linux驱动/interrupt",
+    "command": "/opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -nostdinc -isystem /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/7.5.0/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/generated -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/generated/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include/generated/uapi -include /home/han/desktop/code/Linux驱动/linux-4.9.88/include/linux/kconfig.h -D__KERNEL__ -DMODULE -D__LINUX_ARM_ARCH__=7 -march=armv7-a -Wall -c -o 共享工作队列.o 共享工作队列.c",
+    "file": "/home/han/desktop/code/Linux驱动/interrupt/共享工作队列.c"
+  },
+  {
+    "directory": "/home/han/desktop/code/Linux驱动/param",
+    "command": "/opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -nostdinc -isystem /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/7.5.0/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/generated -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/generated/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include/generated/uapi -include /home/han/desktop/code/Linux驱动/linux-4.9.88/include/linux/kconfig.h -D__KERNEL__ -DMODULE -D__LINUX_ARM_ARCH__=7 -march=armv7-a -Wall -c -o param.o param.c",
+    "file": "/home/han/desktop/code/Linux驱动/param/param.c"
+  },
+  {
+    "directory": "/home/han/desktop/code/Linux驱动/code/platform",
+    "command": "/opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -nostdinc -isystem /opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/7.5.0/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/generated -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/arch/arm/include/generated/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include/uapi -I/home/han/desktop/code/Linux驱动/linux-4.9.88/include/generated/uapi -include /home/han/desktop/code/Linux驱动/linux-4.9.88/include/linux/kconfig.h -D__KERNEL__ -DMODULE -D__LINUX_ARM_ARCH__=7 -march=armv7-a -Wall -c -o 注册platform设备.o 注册platform设备.c",
+    "file": "/home/han/desktop/code/Linux驱动/code/platform/注册platform设备.c"
+  }
+]
+
+
