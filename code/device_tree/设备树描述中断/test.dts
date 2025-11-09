@@ -1,0 +1,12 @@
+/dts-v1/;
+
+/{
+    model = "test gpio";
+    gt911@5d
+    {
+        compatible="goodix,gt911";
+        interrupt-parent = <&gpio0>; 
+        interrupts=<10 1>;
+    };
+}
+

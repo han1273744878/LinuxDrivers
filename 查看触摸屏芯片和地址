@@ -1,0 +1,1 @@
+dmesg | grep -i -E 'gt|goodix|touch|IC Version'
